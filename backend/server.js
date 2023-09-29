@@ -9,6 +9,8 @@ app.use((req, res, next) => {
     next()
   })
 
+  app.use(express.json());
+
 //Route
 
 app.use('/api/workout',WorkoutRoute);
