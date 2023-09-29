@@ -1,6 +1,12 @@
+require('dotenv').config();
 const express=require('express');
 const app=express();
 
-app.listen(3000,() => {
-    console.log('Porst 3000 Connected');
+app.get('/', (req,res) => {
+    res.json({mssg: 'welcome to the app'});
 });
+
+app.listen(process.env.PORT,() => {
+    console.log('listening port!', process.env.PORT);
+});
+
