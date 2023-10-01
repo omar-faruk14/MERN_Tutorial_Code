@@ -12,8 +12,9 @@ function App() {
         <div className="pages">
           <Routes>
             <Route 
-              path="/hello" 
+              path="/" 
               element={<Home />} 
+              
             />
           </Routes>
         </div>
